@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="am">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ethio Green Mobility">
+    <meta property="og:description"
+        content="Experience the Ethio Green Mobility Expo, the leading electric vehicle event in Ethiopia, showcasing cutting-edge sustainable transportation and innovation. Discover the latest in electric vehicles, charging solutions, and green technology in Addis Ababa. Organized by the Ethiopian Ministry of Transport and Logistics to promote a sustainable global future.">
+    <meta property="og:image" content="./assets/img/logo.png">
+
+    <title>Ethiopian Ministry of Transport and Logistics</title>
+    <meta name="title" content="Ethio Green Mobility">
+    <meta name="description"
+        content="Experience the Ethio Green Mobility Expo, the leading electric vehicle event in Ethiopia, showcasing cutting-edge sustainable transportation and innovation. Discover the latest in electric vehicles, charging solutions, and green technology in Addis Ababa. Organized by the Ethiopian Ministry of Transport and Logistics to promote a sustainable global future.">
+
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Ethio Green Mobility">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flipdown@0.3.2/dist/flipdown.min.css">
+
+
+    <style>
+        .animated-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 12px 30px;
+            border: 4px solid;
+            border-color: transparent;
+            font-size: 16px;
+            background-color: inherit;
+            border-radius: 10px;
+            font-weight: 600;
+            color: rgb(0, 75, 42);
+            box-shadow: 0 0 0 2px rgb(0, 75, 42);
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button svg {
+            position: absolute;
+            width: 24px;
+            fill: rgb(0, 75, 42);
+            z-index: 9;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button .arr-1 {
+            right: 16px;
+        }
+
+        .animated-button .arr-2 {
+            left: -25%;
+        }
+
+        .animated-button .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 75, 42);
+            border-radius: 30%;
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button .text {
+            position: relative;
+            z-index: 1;
+            transform: translateX(-12px);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button:hover {
+            box-shadow: 0 0 0 12px transparent;
+            color: #ffffff;
+            border-radius: 12px;
+        }
+
+        .animated-button:hover .arr-1 {
+            right: -25%;
+        }
+
+        .animated-button:hover .arr-2 {
+            left: 16px;
+        }
+
+        .animated-button:hover .text {
+            transform: translateX(12px);
+        }
+
+        .animated-button:hover svg {
+            fill: #ffffff;
+        }
+
+        .animated-button:active {
+            scale: 0.95;
+            box-shadow: 0 0 0 4px rgb(0, 75, 19);
+        }
+
+        .animated-button:hover .circle {
+            width: 220px;
+            height: 220px;
+            opacity: 1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="l-header">
+        <a href="./"><img class="header_img" src="./assets/img/logo.png" alt="ethio ev png logo" /></a>
+           <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <div id="flipdown" class="flipdown"></div>
+                <li class="nav__item">
+                    <a href="./" class="nav__link ">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav__item"><a href="./documents" class="nav__link">Documents</a></li>
+
+                <li class="nav__item">
+                    <a href="./about" class="nav__link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link active">
+                        Events
+                    </a>
+                </li>
+
+              
+                <a href="./preference">
+                    <button class="button">
+                        BOOK A STAND
+                    </button></a>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+
+    <main class="l-main">
+        <section class="vision section1" id="vision">
+            <h2 class="section-title" style="color: black;  ">Ethio Green Mobility 2024</h2>
+
+            <div class="about__container bd-grid">
+                <img src="./assets/img/charging_station.jpg" alt="">
+
+                <div>
+                    <p class="about__text">Ethio Green Mobility 2024 will be held from November 22-30. This expo will showcase the latest
+                        innovations in sustainable mobility, including cutting-edge electric vehicles and renewable
+                        energy technologies.
+
+                        <br><br>
+                        Attendees will have the opportunity to engage with industry leaders through keynote speeches,
+                        interactive workshops, and panel discussions. The event also provides a platform for networking
+                        and collaboration among stakeholders from various sectors, all working to drive Ethiopia's
+                        vision for a greener future.
+
+                        <br><br>
+                        This expo is not only a showcase of technological advancements but also a celebration of
+                        Ethiopia's growing role in the global transition towards sustainable transport.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div style="display: flex; justify-content: center;">
+            <h1>Objective of Events</h1>
+        </div>
+
+
+        <section class="mission section12" id="mission"
+            style="display: flex;align-items: center;flex-direction: column;">
+            <p class="about__text" style="max-width: 1024px; margin-top: 50px; margin-left: 15px;margin-right: 15px;">
+                    <b>Showcase Innovations:</b> Highlight the latest advancements in electric vehicles (EVs) and
+                    green technologies, demonstrating cutting-edge solutions and products that contribute to
+                    sustainability and environmental protection.
+                    <br /><br />
+
+                    <b>Promote Sustainable Development:</b> Foster the adoption of sustainable practices and
+                    technologies across various sectors, including transportation, energy, waste management, and
+                    agriculture, to support Ethiopia's transition to a greener economy.
+                    <br /><br />
+
+                    <b>Encourage Collaboration:</b> Facilitate networking and partnerships between industry leaders,
+                    technology providers, policymakers, and environmental advocates to drive collaborative efforts
+                    and shared solutions for pressing environmental challenges.
+                    <br /><br />
+
+                    <b>Educate and Inspire:</b> Provide a platform for knowledge exchange and thought leadership on
+                    best practices, emerging trends, and innovative approaches in the fields of electric mobility
+                    and green technologies.
+                    <br /><br />
+
+                    <b>Support Policy Development:</b> Inform and influence policy discussions and decisions by
+                    showcasing successful implementations of green technologies and EVs, thereby supporting the
+                    development of effective policies and regulations.
+                    <br /><br />
+
+                    <b>Stimulate Economic Growth:</b> Promote investment opportunities and stimulate economic growth
+                    by attracting local and international businesses, investors, and entrepreneurs interested in the
+                    green technology sector.
+                    <br /><br />
+                    </b>Raise Public Awareness:</b> Engage the general public and increase awareness about the
+                    importance of sustainability, the benefits of green technologies, and the role of electric
+                    vehicles in reducing environmental impact.
+                
+            </p>
+        </section>
+
+
+
+        <section>
+            <div>
+                <h3 style="display: flex; justify-content: center;">Ethio Green Mobility 2024 Sessions </h3>
+                <div style="display: flex; justify-content: center; gap: 0px;">
+                    <div
+                        style=" border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #f0f0f0; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">1<br>OPENING CEREMONY</p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+                    <div
+                        style=" border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #f0f0f0; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">4<br>PLENARY SESSION</p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+                    <div
+                        style=" border-radius: 5px ;padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #d4f4fb; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">4<br>HIGH LEVEL SESSIONS</p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+
+
+
+                </div>
+                <br>
+
+                <div style="display: flex; justify-content: center; gap: 0px;">
+                    <div
+                        style=" border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #0fdada; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">14<br>PARALLEL SESSIIONS </p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+
+                    <div
+                        style="border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #f8d0d0; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">2<br>TRAINING SESSIONS</p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+                    <div
+                        style="border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #d3faea; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">1<br>Round Table
+                            </p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div style="display: flex; justify-content: center; gap: 0px;">
+
+                    <div
+                        style="border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #bbf9f6; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">36<br>Side Event</p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+                    <div
+                        style="border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: #bbf9f6; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                            <p style="margin: 0; ">1<br>CLOSING CEREMONY</p>
+                        </div>
+                        <p style="margin: 0; align-self: flex-end;font-weight: bold;">coming soon</p>
+                    </div>
+
+                    <div
+                        style="border-radius: 5px; padding: 10px; margin: 10px; width: 340px; height: 150px; background-color: rgba(187, 249, 246, 0.0); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div>
+
+                            <a href="#"
+                                class="animated-button" target="_blank">
+                                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                    </path>
+                                </svg>
+                                <span class="text">View in Google Sheets</span>
+                                <span class="circle"></span>
+                                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+        <br>
+    </main>
+    
+    <footer class="footer">
+        <h1>ETHIOPIAN MINISTRY OF TRANSPORT AND LOGISTICS</h1>
+        <section class="contact section" id="contact" style="padding-top: 0px;"></section>
+        <div class="footer__details"
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px;">
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Contact Us</h3>
+                <a href="tel:+251992099955">
+                    <p style="margin: 0;color: #ffffff; text-decoration: none;">Phone: +251992099955</p>
+                </a>
+                <a href="tel:+251923779255">
+                    <p style="margin: 0;color: #ffffff; text-decoration: none;">Phone: +251923779255</p>
+                </a>
+            </div>
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Useful links</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 5px;"><a href="https://www.motl.gov.et" style="color: #ffffff; text-decoration: none;">
+                        motl.gov.et</a></li>
+                    <li style="margin-bottom: 5px;"><a href="https://www.ethiopianairlines.com/us/"
+                            style="color: #ffffff; text-decoration: none;">ethiopianairlines</a></li>
+                </ul>
+            </div>
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Email Us</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 5px;"><a href="mailto:egm@motl.gov.e"
+                            style="color: #ffffff; text-decoration: none;"> egm@motl.gov.et</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin: 20px 0 0; font-size: small; color: #a6dfdf;">Copyright 2024 Ethiopian
+            Ministry of Transport and Logistics. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/flipdown@0.3.2/dist/flipdown.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var targetDate = new Date('2024-11-22T00:00:00Z').getTime() / 1000;
+            var now = Math.floor(Date.now() / 1000);
+            var flipdown = new FlipDown(targetDate)
+                .start()
+                .ifEnded(() => {
+                    console.log('The countdown has ended!');
+                    document.getElementById('countdownCard').classList.add('show');
+                });
+
+            document.getElementById('flipdown').classList.add('flipdown__theme-dark');
+        });
+    </script>
+
+
+
+
+
+    <script src="./assets/js/lang.js"></script>
+    <script src="./assets/js/about.js"></script>
+
+
+</body>
+
+</html>

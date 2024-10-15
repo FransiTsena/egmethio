@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="am">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ethio Green Mobility">
+    <meta property="og:description"
+        content="Experience the Ethio Green Mobility Expo, the leading electric vehicle event in Ethiopia, showcasing cutting-edge sustainable transportation and innovation. Discover the latest in electric vehicles, charging solutions, and green technology in Addis Ababa. Organized by the Ethiopian Ministry of Transport and Logistics to promote a sustainable global future.">
+    <meta property="og:image" content="./assets/img/logo.png">
+
+    <title>Ethiopian Ministry of Transport and Logistics</title>
+    <meta name="title" content="Ethio Green Mobility">
+    <meta name="description"
+        content="Experience the Ethio Green Mobility Expo, the leading electric vehicle event in Ethiopia, showcasing cutting-edge sustainable transportation and innovation. Discover the latest in electric vehicles, charging solutions, and green technology in Addis Ababa. Organized by the Ethiopian Ministry of Transport and Logistics to promote a sustainable global future.">
+
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Ethio Green Mobility">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flipdown@0.3.2/dist/flipdown.min.css">
+
+    <style>
+        .title {
+            display: flex;
+            justify-content: center
+        }
+
+        .animated-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 12px 30px;
+            border: 4px solid;
+            border-color: transparent;
+            font-size: 16px;
+            background-color: inherit;
+            border-radius: 10px;
+            font-weight: 600;
+            color: rgb(0, 75, 42);
+            box-shadow: 0 0 0 2px rgb(0, 75, 42);
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button svg {
+            position: absolute;
+            width: 24px;
+            fill: rgb(0, 75, 42);
+            z-index: 9;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button .arr-1 {
+            right: 16px;
+        }
+
+        .animated-button .arr-2 {
+            left: -25%;
+        }
+
+        .animated-button .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 75, 42);
+            border-radius: 30%;
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button .text {
+            position: relative;
+            z-index: 1;
+            transform: translateX(-12px);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .animated-button:hover {
+            box-shadow: 0 0 0 12px transparent;
+            color: #ffffff;
+            border-radius: 12px;
+        }
+
+        .animated-button:hover .arr-1 {
+            right: -25%;
+        }
+
+        .animated-button:hover .arr-2 {
+            left: 16px;
+        }
+
+        .animated-button:hover .text {
+            transform: translateX(12px);
+        }
+
+        .animated-button:hover svg {
+            fill: #ffffff;
+        }
+
+        .animated-button:active {
+            scale: 0.95;
+            box-shadow: 0 0 0 4px rgb(0, 75, 19);
+        }
+
+        .animated-button:hover .circle {
+            width: 220px;
+            height: 220px;
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="l-header">
+        <a href="./"><img class="header_img" src="./assets/img/logo.png" alt="ethio ev png logo" /></a>
+           <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <div id="flipdown" class="flipdown"></div>
+                <li class="nav__item">
+                    <a href="./" class="nav__link ">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav__item"><a href="./documents" class="nav__link">Documents</a></li>
+
+                <li class="nav__item">
+                    <a href="./about" class="nav__link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="./events" class="nav__link">
+                        Events
+                    </a>
+                </li>
+
+                
+                   <a href="./preference">
+                    <button class="button">
+                        BOOK A STAND
+                    </button></a>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <main class="l-main">
+          <h1 class="title">Select Preference</h1>
+
+          
+        <section id="explore">
+            <div class="work__container bd-grid" style="gap: 20px; justify-items: start; text-align: start; ">
+                <a href="./exhibitor-registration">
+                    <div class="work__img" style="display: flex; flex-direction: column; align-items: center;"><img
+                            src="./assets/icons/icon-exhibit.png" width="120px">
+                        <h3 class="news__subtitle" style="padding: 0 15px; color: var(--first-color);">EXHIBIT</h3>
+                        <p class="news__text"
+                            style="overflow: hidden; max-height: 100px;padding: 0 15px; color: gray; text-overflow: ellipsis;">
+                            Gain new connections - emails, names, handshakes - potential clients and client inquiries,
+                            boosting your sales pipeline for the year.</p>
+                            <button class="animated-button" style="margin: 15px;">
+           
+                                <svg viewBox="0 0 24 24" class="arr-2">
+                                  <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                  ></path>
+                                </svg>
+                                <span class="text">EXHIBIT REGISTRATION</span>
+                                <span class="circle"></span>
+                                <svg viewBox="0 0 24 24" class="arr-1">
+                                  <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                  ></path>
+                                </svg>
+                                
+                              </button>
+                    </div>
+                </a>
+
+                <a href="./visitor-registration">
+                    <div class="work__img" style="display: flex; flex-direction: column; align-items: center;"><img
+                            src="./assets/icons/icon-visit.png" width="120px">
+                        <h3 class="news__subtitle" style="padding: 0 15px; color: var(--first-color);">VISIT</h3>
+                        <p class="news__text"
+                            style="overflow: hidden; max-height: 100px;padding: 0 15px; color: gray; text-overflow: ellipsis;">
+                            Connect, learn, collaborate and discover the inspiration to take on challenges and unlock
+                            new business opportunities.</p>
+                            <button class="animated-button" style="margin: 15px;">
+           
+                                <svg viewBox="0 0 24 24" class="arr-2">
+                                  <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                  ></path>
+                                </svg>
+                                <span class="text">VISITOR REGISTRATION</span>
+                                <span class="circle"></span>
+                                <svg viewBox="0 0 24 24" class="arr-1">
+                                  <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                                  ></path>
+                                </svg>
+                                
+                              </button>
+                    </div>
+                </a>
+
+                <a href="./stand-registration">
+                    <div class="work__img" style="display: flex; flex-direction: column; align-items: center;"><img
+                            src="./assets/icons/icon-visit.png" width="120px">
+                        <h3 class="news__subtitle" style="padding: 0 15px; color: var(--first-color);">SPEAK</h3>
+                        <p class="news__text"
+                            style="overflow: hidden; max-height: 100px; padding: 0 15px; color: gray; text-overflow: ellipsis;">
+                            Position yourself as a thought-leader and keep your company's profile at the front of the
+                            industry.
+
+                        </p>
+                        
+                        <button class="animated-button" style="margin: 15px;">
+           
+                            <svg viewBox="0 0 24 24" class="arr-2">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            <span class="text">BECOME A SPEAKER</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            
+                          </button>
+                    </div>
+                </a>
+
+                <a href="./#partner">
+                    <div class="work__img" style="display: flex; flex-direction: column; align-items: center;"><img
+                            src="./assets/icons/icon-matching.png" width="120px">
+                        <h3 class="news__subtitle" style="padding: 0 15px; color: var(--first-color);">PARTNER</h3>
+                        <p class="news__text"
+                            style="overflow: hidden; max-height: 100px;padding: 0 15px; color: gray; text-overflow: ellipsis;">
+                            Affiliate your brand to a global and world class event to ignite your brand visibility, earn
+                            repeat business and referrals to new clients.
+                        </p>
+                        
+                        <button class="animated-button" style="margin: 15px;">
+           
+                            <svg viewBox="0 0 24 24" class="arr-2">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            <span class="text">BECOME A PARTNER</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1">
+                              <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                              ></path>
+                            </svg>
+                            
+                          </button>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="footer">
+        <h1>ETHIOPIAN MINISTRY OF TRANSPORT AND LOGISTICS</h1>
+        <section class="contact section" id="contact" style="padding-top: 0px;"></section>
+        <div class="footer__details"
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px;">
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Contact Us</h3>
+                <a href="tel:+251992099955">
+                    <p style="margin: 0;color: #ffffff; text-decoration: none;">Phone: +251992099955</p>
+                </a>
+                <a href="tel:+251923779255">
+                    <p style="margin: 0;color: #ffffff; text-decoration: none;">Phone: +251923779255</p>
+                </a>
+            </div>
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Useful links</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 5px;"><a href="https://www.motl.gov.et" style="color: #ffffff; text-decoration: none;">
+                        motl.gov.et</a></li>
+                    <li style="margin-bottom: 5px;"><a href="https://www.ethiopianairlines.com/us/"
+                            style="color: #ffffff; text-decoration: none;">ethiopianairlines</a></li>
+                </ul>
+            </div>
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Email Us</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 5px;"><a href="mailto:egm@motl.gov.e"
+                            style="color: #ffffff; text-decoration: none;"> egm@motl.gov.et</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin: 20px 0 0; font-size: small; color: #a6dfdf;">Copyright 2024 Ethiopian
+            Ministry of Transport and Logistics. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/flipdown@0.3.2/dist/flipdown.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var targetDate = new Date('2024-11-22T00:00:00Z').getTime() / 1000;
+            var now = Math.floor(Date.now() / 1000);
+            var flipdown = new FlipDown(targetDate)
+                .start()
+                .ifEnded(() => {
+                    console.log('The countdown has ended!');
+                    document.getElementById('countdownCard').classList.add('show');
+                });
+
+            document.getElementById('flipdown').classList.add('flipdown__theme-dark');
+        });
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

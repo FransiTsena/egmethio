@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="am">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ethio Green Mobility">
+    <meta property="og:description"
+        content="Experience the Ethio Green Mobility Expo, the leading electric vehicle event in Ethiopia, showcasing cutting-edge sustainable transportation and innovation. Discover the latest in electric vehicles, charging solutions, and green technology in Addis Ababa. Organized by the Ethiopian Ministry of Transport and Logistics to promote a sustainable global future.">
+    <meta property="og:image" content="./assets/img/logo.png">
+
+    <title>Ethiopian Ministry of Transport and Logistics</title>
+    <meta name="title" content="Ethio Green Mobility">
+    <meta name="description"
+        content="Experience the Ethio Green Mobility Expo, the leading electric vehicle event in Ethiopia, showcasing cutting-edge sustainable transportation and innovation. Discover the latest in electric vehicles, charging solutions, and green technology in Addis Ababa. Organized by the Ethiopian Ministry of Transport and Logistics to promote a sustainable global future.">
+
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Ethio Green Mobility">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flipdown@0.3.2/dist/flipdown.min.css">
+    <link rel="stylesheet" href="./assets/css/registeration.css">
+
+</head>
+
+<body>
+    <header class="l-header">
+        <a href="./"><img class="header_img" src="./assets/img/logo.png" alt="ethio ev png logo" /></a>
+           <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <div id="flipdown" class="flipdown"></div>
+                <li class="nav__item">
+                    <a href="./" class="nav__link ">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav__item"><a href="./documents" class="nav__link">Documents</a></li>
+
+                <li class="nav__item">
+                    <a href="./about" class="nav__link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="./events" class="nav__link">
+                        Events
+                    </a>
+                </li>
+
+              
+                <a href="./preference">
+                    <button class="button">
+                        BOOK A STAND
+                    </button></a>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <main class="l-main">
+        <div class="container">
+            <h1 class="title">Exhibitor Application</h1>
+            <form id="form-information">
+                <fieldset>
+                    <legend>1. City/ Institutional Information</legend>
+                    <div class="flex-row">
+                        <div class="form-group">
+                            <label for="title">City/Institution Name *</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="population">Population</label>
+                            <input type="text" id="population" name="population">
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="description">Brief Description of the City/Institution *</label>
+                        <textarea id="description" name="description" class="unique-textarea unique-description-input"
+                            rows="4" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Exhibit Details</legend>
+                    <div class="form-group">
+                        <label for="exhibit-title">Title of the Exhibit *</label>
+                        <input type="text" id="exhibit-title" name="exhibit_title" required>
+                    </div>
+                    <div class="flex-row">
+                        <div class="form-group">
+                            <label for="exhibit-summary">Summary of the Exhibit *</label>
+                            <textarea id="exhibit-summary" name="exhibit_summary" placeholder="including key themes, goals, and objectives"
+                                class="unique-textarea unique-description-input" rows="2" required></textarea>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="innovations">Description of the Innovations *</label>
+                            <textarea id="innovations" name="innovations"
+                                class="unique-textarea unique-description-input" rows="2" required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>3. Exhibit Requirements</legend>
+                        <p style="padding-right: 50%;">Space Requirements (attached layout) </p>
+                            <label>Booth Size *</label>
+                            <div class="booth-size-options">
+                                <div class="booth-size-card">
+                                    <input type="radio" id="size1" name="booth_size" value="9m2" />
+                                    <label for="size1">
+                                        <div class="booth-size-info">9m²<br>$4,888</div>
+                                    </label>
+                                </div>
+                                <div class="booth-size-card">
+                                    <input type="radio" id="size2" name="booth_size" value="12m2" />
+                                    <label for="size2">
+                                        <div class="booth-size-info">12m²<br>$6,518</div>
+                                    </label>
+                                </div>
+                                <div class="booth-size-card">
+                                    <input type="radio" id="size3" name="booth_size" value="36m2" />
+                                    <label for="size3">
+                                        <div class="booth-size-info">36m²<br>$19,551</div>
+                                    </label>
+                                </div>
+                                <div class="booth-size-card">
+                                    <input type="radio" id="size4" name="booth_size" value="45m2" />
+                                    <label for="size4">
+                                        <div class="booth-size-info">45m²<br>$24,440</div>
+                                    </label>
+                                </div>
+                            </div>
+                            
+            
+                        <div class="form-group">
+                            <label for="layout-preferences">Layout preferences no. *</label>
+                            <input type="text" id="layout-preferences" name="layout_preferences" required>
+                        </div>
+                    
+                    <div class="flex-row">
+                        <div class="form-group">
+                            <label for="technical-needs">Technical Needs *</label>
+                            <textarea id="technical-needs" name="technical_needs" placeholder="e.g., audiovisual equipment, internet access"
+                                class="unique-textarea unique-description-input" rows="4" required></textarea>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="special-requests">Any Special Requests or Considerations</label>
+                            <textarea id="special-requests" name="special_requests"
+                                class="unique-textarea unique-description-input" rows="4"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>4. Contact Information</legend>
+                    <div class="flex-row">
+                        <div class="form-group">
+                            <label for="contact-person">Primary Contact Person *</label>
+                            <input type="text" id="contact-person" name="contact_person" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="contact-title">Position/Title *</label>
+                            <input type="text" id="contact-title" name="contact_title" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="organization">Organization *</label>
+                            <input type="text" id="organization" name="organization" required>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number *</label>
+                            <input type="text" id="phone-number" name="phone_number" value="+" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>5. Supporting Documents</legend>
+                    <div class="flex-row">
+                        <div class="form-group">
+                            <label for="proposal-upload">A brief proposal or concept note detailing the exhibit's relevance theme *</label>
+                            <input type="file" id="proposal-upload" name="proposal_upload" accept="application/pdf" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="visuals-upload">Visuals or design mock-ups of the planned exhibit (if available)</label>
+                            <input type="file" id="visuals-upload" name="visuals_upload" accept="image/*,application/pdf">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>6. Logistical Information</legend>
+                    <div class="flex-row">
+                        <div class="form-group">
+                            <label for="arrival-date">Arrival Date *</label>
+                            <input type="date" id="arrival-date" name="arrival_date" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="departure-date">Departure Date *</label>
+                            <input type="date" id="departure-date" name="departure_date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="setup-requirements">Any Requirements for Set-Up and Dismantling *</label>
+                        <input type="text" id="setup-requirements" name="setup_requirements" required>
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>7. Additional Information</legend>
+                    <div class="form-group">
+                        <label for="previous-exhibitions">Previous Exhibitions (if any) or Experience (optional)</label>
+                        <textarea id="previous-exhibitions" name="previous_exhibitions"
+                            class="unique-textarea unique-description-input" rows="4"></textarea>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="team-information">Information about the team or organization behind the exhibit (optional)</label>
+                        <textarea id="team-information" name="team_information"
+                            class="unique-textarea unique-description-input" rows="4"></textarea>
+                    </div>
+                </fieldset>
+            
+                <button type="submit">Register</button>
+            </form>
+            
+            <br />
+            <p>For specific details and deadlines, contact the Ethio Green Mobility 2024 organizing committee at <a
+                    href="mailto:egm@motl.gov.et">egm@motl.gov.et</a>.
+            </p>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <div class="message-box" id="messageBox">
+                <p>Registration successful. You will receive a confirmation email soon. Thank You</p>
+                <button onclick="navigateToHome()" class="txt_btn">Okay</button>
+            </div>
+        </div>
+
+        <div id="snackbar" class="snackbar"></div>
+        <div id="progressOverlay" class="progress-overlay">
+            <div class="loader"></div>
+            <div class="loader s"></div>
+        </div>
+
+    </main>
+
+    
+    <footer class="footer">
+        <h1>ETHIOPIAN MINISTRY OF TRANSPORT AND LOGISTICS</h1>
+        <section class="contact section" id="contact" style="padding-top: 0px;"></section>
+        <div class="footer__details"
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px;">
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Contact Us</h3>
+                <a href="tel:+251992099955">
+                    <p style="margin: 0;color: #ffffff; text-decoration: none;">+251992099955</p>
+                </a>
+                <a href="tel:+251923779255">
+                    <p style="margin: 0;color: #ffffff; text-decoration: none;">+251923779255</p>
+                </a>
+            </div>
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Useful links</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 5px;"><a href="https://www.motl.gov.et" style="color: #ffffff; text-decoration: none;">
+                        motl.gov.et</a></li>
+                    <li style="margin-bottom: 5px;"><a href="https://www.ethiopianairlines.com/us/"
+                            style="color: #ffffff; text-decoration: none;">ethiopianairlines</a></li>
+                </ul>
+            </div>
+            <div class="footer__section" style="flex: 1; min-width: 200px; padding: 10px;">
+                <h3>Email Us</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 5px;"><a href="mailto:egm@motl.gov.e"
+                            style="color: #ffffff; text-decoration: none;"> egm@motl.gov.et</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin: 20px 0 0; font-size: small; color: #a6dfdf;">Copyright 2024 Ethiopian
+            Ministry of Transport and Logistics. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/flipdown@0.3.2/dist/flipdown.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var targetDate = new Date('2024-11-22T00:00:00Z').getTime() / 1000;
+            var now = Math.floor(Date.now() / 1000);
+            var flipdown = new FlipDown(targetDate)
+                .start()
+                .ifEnded(() => {
+                    console.log('The countdown has ended!');
+                    document.getElementById('countdownCard').classList.add('show');
+                });
+
+            document.getElementById('flipdown').classList.add('flipdown__theme-dark');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0-beta.1/jsencrypt.min.js"></script>
+    <script src="./assets/js/bee/beeApp.js"></script>
+    <script src="./assets/js/exhibit-registration.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
